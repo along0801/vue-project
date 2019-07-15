@@ -9,6 +9,9 @@ import app from './App.vue';
 import './lib/mui/css/mui.min.css';
 import './lib/mui/css/icons-extra.css';
 
+// #along: 导入主页的 css 样式
+import './lib/css/main.css';
+
 // #along: 导入 mock
 import './lib/mui/js/mock.js';
 
