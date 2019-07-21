@@ -6,7 +6,7 @@
     </div>
 
     <!-- 中间的 路由 router-view 区域 -->
-    <div class="conten">
+    <div class="content">
       <transition>
         <router-view></router-view>
       </transition>
@@ -25,7 +25,7 @@
         </router-link>
         <router-link class="mui-tab-item-Tim" to="/shopcar">
           <span class="mui-icon mui-icon-extra mui-icon-extra-cart">
-            <span class="mui-badge">0</span>
+            <span class="mui-badge" id="badge">0</span>
           </span>
           <span class="mui-tab-label">购物车</span>
         </router-link>
@@ -76,27 +76,29 @@ export default {};
 }
 
 /* Tim 解决移动端 底部导航出不来问题 start */
-.footer {
+.header {
   position: absolute;
-  height: 50px;
+  height: 30px;
   width: 100%;
-  bottom: 0;
+  top: 0;
 }
 
 .content {
   position: absolute;
   left: 0;
   right: 0;
-  top: 30px;
-  bottom: 50px;
+  top: 40px;
+  bottom: 40px;
   /*height: calc(100% - 50px);*/
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
-.header {
+
+.footer {
   position: absolute;
-  height: 30px;
+  height: 50px;
   width: 100%;
-  top: 0;
+  bottom: 0;
 }
 
 /* Tim 解决移动端 底部导航出不来问题 end */
