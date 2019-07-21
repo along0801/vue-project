@@ -24,6 +24,7 @@ export default {
   mounted() {
     // 初始化数字选择框组件
     mui(".mui-numbox").numbox();
+    // console.log(this.max);
   },
   methods: {
     countChanged() {
@@ -37,7 +38,7 @@ export default {
     // 事件监听
     max: function(newVal, oldVal) {
       // 使用 JS API 设置 numbox 的最大值
-      mui(Selector)
+      mui(".mui-numbox")
         .numbox()
         .setOption("max", newVal);
     }
